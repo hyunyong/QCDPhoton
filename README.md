@@ -2,16 +2,14 @@
 
 ```
 git clone git@github.com:hyunyong/QCDPhoton.git
-python QCDPhotonAna.py
+./rc.sh
 ```
-or 
-```
-wget https://raw.githubusercontent.com/hyunyong/QCDPhoton/master/QCDPhotonAna.py
-wget https://raw.githubusercontent.com/hyunyong/QCDPhoton/master/QCDPhoton.root
-python QCDPhotonAna.py
-```
+## Results
 
-Download text file
 ```
-wget https://raw.githubusercontent.com/hyunyong/QCDPhoton/master/photonM.txt
+30,000 events 
+N: 4032.16
 ```
+![photon energy](https://github.com/hyunyong/QCDPhoton/blob/master/photonE.png)
+![chi1 energy](https://github.com/hyunyong/QCDPhoton/blob/master/chi1E.png)
+![nChi1/event](https://github.com/hyunyong/QCDPhoton/blob/master/nChi1.png)
