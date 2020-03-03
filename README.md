@@ -1,5 +1,9 @@
-# QCD photon analyzer
-
+# Dark Metter
+## Reference
+```
+https://arxiv.org/pdf/1612.06867.pdf
+```
+## How to
 ```
 git clone git@github.com:hyunyong/QCDPhoton.git
 ./rc.sh
