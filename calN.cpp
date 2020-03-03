@@ -65,10 +65,10 @@ int main() {
         for (int x = 0; x < 2; x++) {
           auto tmpChi1 = tmp.GetDecay(x);
           if (abs(tmpChi1->Theta()) > TMath::Pi()/2.) continue;
-          if ( ((mChi2*mChi2 - mChi1*mChi1)/(2.*mT_) + mChi2) > tmpChi1->E()) continue;
+          if (tmpChi1->E() <  ((mChi2*mChi2 - mChi1*mChi1)/(2.*mT_) + mChi2)) continue;
           chi1E->Fill(tmpChi1->E());
           cChi1 += 1;
-          N += getL(tmpChi1)*get_xSec_proton(tmpChi1->E(), mChi1, mT_, mChi2, mAp, eps_, g12_)*lNp;
+          N += w*getL(tmpChi1)*lNp*get_xSec_proton(tmpChi1->E(), mChi1, mT_, mChi2, mAp, eps_, g12_);
         }
       }
     }
