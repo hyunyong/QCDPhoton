@@ -6,6 +6,7 @@ https://arxiv.org/pdf/1612.06867.pdf
 ## How to
 ```
 git clone git@github.com:hyunyong/QCDPhoton.git
+cd QCDPhoton
 ./rc.sh
 ```
 ## Results
